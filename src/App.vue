@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <Header />
-      <div id="nav">
-        <router-link to="/">Career</router-link>|
-        <router-link to="/about">Skills</router-link>
-      </div>
-      <router-view />    
-      
+    <div class="wrap">
+      <Tech />
+      <Nav />
+      <router-view />
+    </div>
   </div>
 </template>
 <script>
 import Header from "./components/Header";
+import Tech from "./components/Tech";
+import Nav from "./components/Nav";
 export default {
   components: {
-    Header
+    Header,
+    Tech,
+    Nav
   }
 };
 </script>
@@ -29,14 +32,10 @@ export default {
   color: #2c3e50;
   height: 100%;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.wrap {
+  max-width: 1000px;
+  padding: 0 1.5em;
+  margin: 0 auto;
+  padding-bottom: 5rem;
 }
 </style>
