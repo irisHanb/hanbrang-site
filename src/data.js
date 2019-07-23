@@ -77,14 +77,14 @@ const experience = [
 
 const portfolio = [
   {
-    title: '경기대학교 원격 교육원 강의 플래시 컨텐츠',
-    desc: '경기대학교 원격 교육원 강의 플래시 컨텐츠 플랫폼 개발, 유지 보수',
+    title: '경기대학교 원격 교육원 플래시 강의 제작 플렛폼 개발',
+    desc: '경기대학교 원격 교육원 플래시강의 제작 플랫폼 개발, 유지 보수',
     img:
       'http://ekgu.ac.kr/static/images/contents/header_kgu_logo.gif;jsessionid=BD523DC377623D6700B148F4215D1A3A',
-    url: 'https://www.pentacle.co.kr/'
+    url: 'https://sce.kyonggi.ac.kr/ht_ml/main/index.php'
   },
   {
-    title: '네스까페 이태원 플레이그라운드',
+    title: '네스까페 이태원 디지털 플레이그라운드',
     desc:
       '키오스크 메뉴, 인스타그램 공유 키오스크, 루프탑 관망화면 키오스크 제작, 유지, 보수',
     img:
@@ -92,7 +92,7 @@ const portfolio = [
     url: 'https://www.youtube.com/watch?v=qOH7-8XX9h4'
   },
   {
-    title: '네스까페 일산 이마트',
+    title: '네스까페 일산 이마트 메뉴안내 키오스크 제작',
     desc: '키오스크 메뉴 개발, 유지, 보수',
     img:
       'data:image/jpeg;base64,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',
@@ -100,67 +100,66 @@ const portfolio = [
       'https://m.blog.naver.com/PostView.nhn?blogId=berryhill626&logNo=220881590303&proxyReferer=https%3A%2F%2Fwww.google.com%2F'
   },
   {
-    title: '펜타클',
-    desc:
-      '디지털 마케팅 대행사, 포트폴리오, 글로벌 브랜드 마케팅, Technology , 마케팅 뉴스 제공.',
+    title: '펜타클 사이트',
+    desc: '메인페이지 video control js 작업',
     img: 'https://pentacle-kr.s3.amazonaws.com/images/common/logo.png',
     url: 'https://www.pentacle.co.kr/'
   },
   {
     title: 'The all-new BMW 7 Series',
-    desc: '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, The all-new BMW 7 Series',
+    desc: 'The all-new BMW 7 Series 사이트 작업',
     img:
       'https://pentacle-kr.s3.amazonaws.com/images/portfolio/f1021cba-babf-4441-b420-b14d716deb5d.jpg',
-    url: 'https://www.pentacle.co.kr/portfolio/190'
+    url: 'https://www.bmw7series.co.kr/'
   },
   {
-    title: '넌나의 OO 이벤트',
-    desc: '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, 넌나의 OO 이벤트',
+    title: '킷캣 넌나의 OO 이벤트 사이트',
+    desc: '킷캣 이벤트 사이트 작업',
     img:
       'https://pentacle-kr.s3.amazonaws.com/images/portfolio/202-e7ba6c1f-5b01-4ad5-aa78-ccaf0a82f6f7.jpg',
     url: 'https://www.pentacle.co.kr/portfolio/202'
   },
   {
     title: '쌤소나이트 레드 Carry On 양세종 디지털 사인회',
-    desc:
-      '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, 쌤소나이트 레드 Carry On 양세종 디지털 사인회',
+    desc: '1대 1 대화방식의 맞춤형 스토리텔링 영상 기반 이벤트 사이트 제작',
     img:
       'https://pentacle-kr.s3.amazonaws.com/images/portfolio/0-ddf20b50-6a07-4af0-ad1b-a4f139f528f9.jpg',
     url: 'https://www.pentacle.co.kr/portfolio/219'
   },
   {
-    title: '누텔라 아침을 부탁해 캠페인',
+    title: '누텔라 아침을 부탁해 캠페인 사이트',
     desc:
-      '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, 누텔라 아침을 부탁해 캠페인',
+      '누텔라 제품, 빵, 디저트를 사용자가 직접 조합하여 만든 이미지를 공유하는 이벤트 사이트 작업',
     img:
       'https://pentacle-kr.s3.amazonaws.com/images/portfolio/269-a227c573-0f75-4f2b-a2ec-20107fb22a5a.jpg',
     url: 'https://www.pentacle.co.kr/portfolio/269'
   },
   {
-    title: '2018 세타필 레스토라덤(AD) 동안바디 캠페인',
+    title: '2018 세타필 레스토라덤(AD) 동안바디 캠페인 사이트',
     desc:
-      '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, 2018 세타필 레스토라덤(AD) 동안바디 캠페인',
+      'desktop 반응형사이트, 메뉴마다 화면전환 효과, 여러가지 이벤트 응모가 모아져 있는 사이트로 작업',
     img:
       'https://pentacle-kr.s3.amazonaws.com/images/portfolio/0-75620d12-04ad-4dfd-99c7-32a098f60818.jpg',
     url: 'https://www.pentacle.co.kr/portfolio/257'
   },
   {
     title: 'U+5G 일상을 바꿉니다',
-    desc: '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, U+5G  일상을 바꿉니다',
+    desc: '랜딩페이지 사이트 작업',
+    skills: 'scss, vue, javascript',
     img:
       'https://pentacle-kr.s3.amazonaws.com/images/portfolio/0-f1cf7ee9-d962-4445-9ef4-e1673f4c435a.jpg',
     url: 'https://www.pentacle.co.kr/portfolio/264'
   },
   {
     title: '아테온 버츄얼 드라이빙',
-    desc: '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, 아테온 버츄얼 드라이빙',
+    desc: '차에 대한 옵션과 기능들을 다이나믹한 네비게이션으로 제작',
     img:
       'https://pentacle-kr.s3.amazonaws.com/images/portfolio/0-568e27c3-0af4-4793-a0d2-a01ad029b4e0.jpg',
-    url: 'https://www.pentacle.co.kr/portfolio/266'
+    url: 'https://arteon.vwkr.co.kr/arteondriving'
   },
   {
     title: '아테온 특별 프로모션',
-    desc: '디지털 마케팅 대행사, 펜타클의 PORTFOLIO, 아테온 특별 프로모션',
+    desc: '특별프로모션 이벤트 사이트 제작',
     img: 'https://vwkr-arteon.s3.amazonaws.com/static/financial/share.jpg',
     url: 'https://arteon.vwkr.co.kr/promotion2019'
   }

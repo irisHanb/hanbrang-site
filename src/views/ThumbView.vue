@@ -2,7 +2,8 @@
   <div class="thumb-view">
     <ul class="item-list">
       <li class="item" v-for="(item, idx) in list" :key="idx">
-        <a :href="item.url" target="_blank" :style="{ backgroundImage: 'url(' + item.img + ')' }">
+        <a :href="item.url" target="_blank">
+          <div class="item__img" :style="{ backgroundImage: 'url(' + item.img + ')' }"></div>
           <div class="item__texts">
             <p class="item__title">{{item.title}}</p>
             <p class="item__desc">{{item.desc}}</p>
@@ -32,28 +33,33 @@ export default {
   .item {
     transition: all 0.3s;
     width: 100%;
-    height: 200px;
+    height: 230px;
     padding-top: 1em;
 
     &__texts {
-      position: absolute;
-      bottom: 0;
-      left: 0;
       width: 100%;
       height: 40%;
+      bottom: 0;
+
       padding: 0.5em 1em;
-      background: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.6);
       text-align: left;
     }
-
     &__title {
-      font-size: 1rem;
-      font-weight: 700;
+      font-size: 1.1rem;
+      font-weight: 600;
     }
     &__desc {
-      opacity: 0.9;
-      font-size: 0.8rem;
-      margin-top: 0.3em;
+      font-size: 0.9rem;
+      margin-top: 0.6em;
+      line-height: 1.2;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-size: cover;
+      background-position: center center;
     }
   }
   a {
@@ -66,6 +72,7 @@ export default {
     box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.3);
 
     border-radius: 0.7em;
+    border: 1px solid #dee2e6;
     overflow: hidden;
 
     text-decoration: none;
@@ -73,6 +80,11 @@ export default {
     background-size: cover;
     background-position: center center;
     color: #fff;
+
+    position: relative;
+    & > * {
+      position: absolute;
+    }
   }
 }
 

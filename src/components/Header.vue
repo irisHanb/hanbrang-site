@@ -27,6 +27,7 @@
   width: 100%;
   overflow: hidden;
   background: url(https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60)
+    // background: url(https://images.unsplash.com/photo-1505855265981-d52719d1f64e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60)
     center center no-repeat;
   background-size: cover;
 
@@ -37,6 +38,7 @@
   .avatar {
     padding-top: 100px;
     &__img {
+      opacity: 0.5;
       display: inline-block;
       width: 170px;
       height: 170px;
@@ -47,6 +49,7 @@
     }
   }
   .ment {
+    // margin-top: 300px;
     padding-top: 15px;
     color: #fff;
     font-weight: 600;
