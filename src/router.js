@@ -1,9 +1,16 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import vueMeta from 'vue-meta';
 import ListView from './views/ListView.vue';
 import { education, experience } from './data';
 
 Vue.use(Router);
+Vue.use(vueMeta, {
+  keyName: 'metaInfo',
+  attribute: 'data-vue-meta',
+  ssrAttribute: 'data-vue-meta-server-rendered',
+  tagIDKeyName: 'vmid'
+});
 
 export default new Router({
   mode: 'history',

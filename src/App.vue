@@ -12,7 +12,10 @@
 import Header from "./components/Header";
 import Tech from "./components/Tech";
 import Nav from "./components/Nav";
+import metaInfo from "./metaInfo.js";
+
 export default {
+  metaInfo,
   components: {
     Header,
     Tech,
