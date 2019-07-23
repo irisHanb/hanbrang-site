@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <div class="link">
-      <router-link to="/">Education</router-link>
+      <router-link to="/education">Education</router-link>
     </div>
     <div class="link">
       <router-link to="/experience">Experience</router-link>
@@ -17,7 +17,7 @@
   margin-bottom: 2em;
   display: flex;
   border-bottom: 0.2rem solid #f1685e;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
 
   .link {
     color: #adb5bd;
@@ -36,21 +36,22 @@
       text-decoration: none;
       font-size: 1.3rem;
 
-      &::before {
-        content: "●";
-        font-size: 1.3rem;
-      }
-
       &.router-link-exact-active {
         color: #f1685e;
       }
     }
-  }
-}
-@media screen and (min-width: 768px) {
-  #nav {
-    .link {
-      a {
+
+    // outline: 1px dotted red;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        margin-top: 0.3em;
+        width: 0.2em;
+        height: 0.7em;
+        background-color: #ced4da;
+        font-size: 1rem;
+        margin-left: 1em;
       }
     }
   }
