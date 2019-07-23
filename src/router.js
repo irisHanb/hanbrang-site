@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import vueMeta from 'vue-meta';
 import ListView from './views/ListView.vue';
+// import ThumbView from './views/ThumbView.vue';
 import { education, experience } from './data';
 
 Vue.use(Router);
@@ -21,12 +22,12 @@ export default new Router({
       name: 'home',
       redirect: '/portfolio'
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () =>
-    //     import(/* webpackChunkName: "about" */ './views/About.vue')
-    // },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      component: () =>
+        import(/* webpackChunkName: "about" */ './views/ThumbView.vue')
+    },
     {
       path: '/education',
       name: 'education',
@@ -42,13 +43,6 @@ export default new Router({
       props: {
         list: experience.reverse()
       }
-    },
-    {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/ThumbView.vue'),
-      props: true
     }
   ]
 });

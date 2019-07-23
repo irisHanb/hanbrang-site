@@ -1,8 +1,5 @@
 <template>
   <div id="nav">
-    <!-- <div class="link">
-      <router-link to="/about">About</router-link>
-    </div>-->
     <div class="link">
       <router-link to="/education">Education</router-link>
     </div>
@@ -10,10 +7,14 @@
       <router-link to="/experience">Work Experience</router-link>
     </div>
     <div class="link">
-      <router-link to="/portFolio">PortFolio</router-link>
+      <router-link to="/portfolio">Portfolio</router-link>
     </div>
   </div>
 </template>
+<script>
+export default {};
+</script>
+
 <style lang="scss">
 #nav {
   margin-top: 3em;
@@ -21,6 +22,17 @@
   display: flex;
   border-bottom: 0.2rem solid #f1685e;
   padding-bottom: 0.5em;
+
+  a {
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    &.router-link-exact-active {
+      color: #f1685e;
+    }
+  }
 
   .link {
     color: #adb5bd;
@@ -32,16 +44,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    a {
-      font-weight: 600;
-      color: inherit;
-      text-decoration: none;
-      font-size: 1.2rem;
-
-      &.router-link-exact-active {
-        color: #f1685e;
-      }
-    }
 
     &:not(:last-child) {
       &::after {
@@ -54,6 +56,9 @@
         margin-left: 0.7em;
       }
     }
+  }
+  .router-link-exact-active {
+    color: #f1685e;
   }
 }
 </style>

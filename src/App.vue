@@ -4,7 +4,7 @@
     <div class="wrap">
       <Tech />
       <Nav />
-      <router-view />
+      <router-view></router-view>
     </div>
   </div>
 </template>
