@@ -5,8 +5,12 @@
     </div>
     <div class="ment">JavaScript Developer</div>
     <div class="links">
-      <p>
-        <a href="mailto:fortrulymylife@gmail.com">fortrulymylife@gmail.com</a>
+      <p class="links__mail">
+        <a href="mailto:fortrulymylife@gmail.com">
+          <span class="icon">
+            <font-awesome-icon icon="envelope" />
+          </span>fortrulymylife@gmail.com
+        </a>
       </p>
       <p>
         <a href="https://hanbnara.tistory.com" target="_blank">https://hanbnara.tistory.com</a>
@@ -68,6 +72,12 @@
 @media screen and (min-width: 768px) {
   .header {
     .links {
+      &__mail {
+        .icon {
+          margin-right: 0.3em;
+        }
+      }
+
       p {
         display: inline-block;
         margin: 0 0.5em;

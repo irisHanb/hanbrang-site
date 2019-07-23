@@ -14,6 +14,12 @@ export default new Router({
       name: 'home',
       redirect: '/portfolio'
     },
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   component: () =>
+    //     import(/* webpackChunkName: "about" */ './views/About.vue')
+    // },
     {
       path: '/education',
       name: 'education',

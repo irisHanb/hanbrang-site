@@ -1,10 +1,13 @@
 <template>
   <div id="nav">
+    <!-- <div class="link">
+      <router-link to="/about">About</router-link>
+    </div>-->
     <div class="link">
       <router-link to="/education">Education</router-link>
     </div>
     <div class="link">
-      <router-link to="/experience">Experience</router-link>
+      <router-link to="/experience">Work Experience</router-link>
     </div>
     <div class="link">
       <router-link to="/portFolio">PortFolio</router-link>
@@ -22,7 +25,7 @@
   .link {
     color: #adb5bd;
     font-size: 1.3rem;
-    margin-right: 1em;
+    margin-right: 0.5em;
     line-height: 1;
 
     display: flex;
@@ -30,18 +33,15 @@
     justify-content: center;
     position: relative;
     a {
-      // width: 100%;
       font-weight: 600;
       color: inherit;
       text-decoration: none;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
 
       &.router-link-exact-active {
         color: #f1685e;
       }
     }
-
-    // outline: 1px dotted red;
 
     &:not(:last-child) {
       &::after {
@@ -51,7 +51,7 @@
         height: 0.7em;
         background-color: #ced4da;
         font-size: 1rem;
-        margin-left: 1em;
+        margin-left: 0.7em;
       }
     }
   }
