@@ -7,11 +7,6 @@ const metaInfo = {
       vmid: 'og:title'
     },
     {
-      property: 'og:url',
-      content: 'http://hanbrang.dothome.co.kr',
-      vmid: 'og:url'
-    },
-    {
       property: 'og:description',
       content: 'hanbrang portfolio site',
       vmid: 'og:description'
